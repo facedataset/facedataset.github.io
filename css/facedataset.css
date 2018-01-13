@@ -1,0 +1,50 @@
+/*!
+ * Polis Finance
+ */
+
+
+/* Fonts */
+body {
+  color: #333333;
+}
+
+h1, h2 {
+  font-family: 'Cutive Mono', monospace;
+  font-weight: 700;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 14px;
+}
+
+
+
+/* Body Elements */
+.site-body {
+  margin-top: 5%;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-left: 0px;
+  margin-bottom: 70px;
+}
+
+.section-last {
+  margin-top: 70px;
+}
+
+@media (max-width: 900px) {
+  .site-body {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+ 
+}
+
+footer {
+  padding: 72px 0 60px;
+}
+
+
+
+
