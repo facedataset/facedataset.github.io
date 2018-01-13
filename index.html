@@ -34,16 +34,46 @@
     <h1 class="title is-1"><b>FACEMETA - Facial Image Metadata Dataset</b></h1>    
 </div>
 
+<hr>
+
 <div>
-    <hr>
-    <h2 class="subtitle is-3" style="padding-top: 3rem; padding-bottom: 2.5rem;">Title</h2>
+    <h2 class="subtitle is-3">Overview</h2>
+    <p>FACEMETA is the largest commercially available dataset of facial images with detailed metadata.</p>
+
+    <p>The FACEMETA dataset is intended for use in scientific research. It contains 255,555 high-resolution standardized photographs of male and female faces of varying ethnicity between the ages of 17-65. Extensive data processing are available for each individual model. These data include both physical attributes as well facial feature encodings.</p>
 </div>
 
+<div>
+    <h2 class="subtitle is-3">Details</h2>
+    <p>FThe metadata for face images include descriptors such as: race, gender, age, height, weight, and eye color, date picture taken. Additionally, pre-processing is available to speed up deep learning projects, including standardization of aspect ratio, image size, image alignment, tilt, noise reduction, standardized field of view, 128 feature points, and image encoding.</p>
 
+    <p>Point on photo taken in real setting...</p>
+    
+    <p>This dataset’s images are pre-processed and ready for modeling. Use cases include:</p>
+    
+    <li>Age/Health prediction</li>
+    <li>ID matching</li>
+    <li>Psychology studies</li>
+    <li>Facial expression analysis</li>
+    <li>Face generation</li>
+    <li><a href="http://www.telegraph.co.uk/technology/2017/09/08/ai-can-tell-people-gay-straight-one-photo-face/" target="_blank">Sexual orientation</a></li>
+    <li><a href="http://bigthink.com/ideafeed/can-technology-estimate-how-long-youll-live-just-by-looking-at-your-face" target="_blank">Life span</a></li>
+</div>
 
 <div>
-    <h2 class="subtitle is-3">Section</h2>
-    <p>Description</p>
+    <h2 class="subtitle is-3">Methodology</h2>
+    <p>Face are standardized and normalize to correct for orientation. Facial landmarks are used to localize and represent salient regions of the face, such as Eyes, Eyebrows, Nose, Mouth, Jawline. Facial landmark were extracted in two step: first, localize the face in the image( pre-trained HOG + Linear SVM object detectors), then detect the key facial structures on the face ROI using ensmeble forrest (f the One Millisecond Face Alignment with an Ensemble of Regression Trees). The pre-trained facial landmark detector estimates the location of 68 (x, y)-coordinates that map to facial structures on the face.</p>
+</div>
+
+<div>
+    <h2 class="subtitle is-3">About</h2>
+    <p>We are a collective of data scientists doing research on computer vision within psychology and other research fields. FACEDATA addresses challenges faced by</p>
+</div>
+
+<div>
+    <h2 class="subtitle is-3">Purchase</h2>
+    <p>FACEMETA is available to be purchased for commercial and academic purposes. The dataset has tiered pricing options by volume and pre-processing.</p>
+    <p>To get started, enter your commercial email below. You’ll be provided with (i) a free sample of 100 images and metadata to ensure it’s aligned with your needs, and (ii) purchase options to download the full dataset.</p>
 </div>
 
 <div class="section-last">
