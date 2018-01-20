@@ -63,10 +63,8 @@
 
 <div class="site-section">
     <hr>
-    <h1 class="subtitle is-3">Details</h1>
-    <p>FThe metadata for face images include descriptors such as: race, gender, age, height, weight, and eye color, date picture taken. Additionally, pre-processing is available to speed up deep learning projects, including standardization of aspect ratio, image size, image alignment, tilt, noise reduction, standardized field of view, 128 feature points, and image encoding.</p>
-
-    <p>Point on photo taken in real setting...</p>
+    <h1 class="subtitle is-3">Overview</h1>
+    <p>The metadata for face images include descriptors such as: race, gender, age, height, weight, and eye color, date picture taken. Additionally, pre-processing is available to speed up deep learning projects, including standardization of aspect ratio, image size, image alignment, tilt, noise reduction, standardized field of view, 128 feature points, and image encoding.</p>
     
     <p>This dataset’s images are pre-processed and ready for modeling. Use cases include:</p>
     
@@ -82,26 +80,30 @@
 <div class="site-section">
     <hr>
     <h1 class="subtitle is-3">Methodology</h1>
-    <p>Face are standardized and normalize to correct for orientation. Facial landmarks are used to localize and represent salient regions of the face, such as Eyes, Eyebrows, Nose, Mouth, Jawline. Facial landmark were extracted in two step: first, localize the face in the image( pre-trained HOG + Linear SVM object detectors), then detect the key facial structures on the face ROI using ensmeble forrest (f the One Millisecond Face Alignment with an Ensemble of Regression Trees). The pre-trained facial landmark detector estimates the location of 68 (x, y)-coordinates that map to facial structures on the face.</p>
+    <p>Face are standardized and normalize to correct for orientation. Facial landmarks are used to localize and represent salient regions of the face, such as eyes, eyebrows, nose, mouth, and jawline. Facial landmark were extracted in two step: first, through localization of the face in the image (pre-trained <a href="https://www.pyimagesearch.com/2014/11/10/histogram-oriented-gradients-object-detection/" target="_blank">HOG + Linear SVM object detectors</a>), then detecting the key facial structures on the face ROI using ensemble forest (see: <a href="https://pdfs.semanticscholar.org/d78b/6a5b0dcaa81b1faea5fb0000045a62513567.pdf" target="_blank">One Millisecond Face Alignment with an Ensemble of Regression Trees</a>). The pre-trained facial landmark detector estimates the location of <b>68 (x, y) coordinates</b> that map to facial structures on the face.</p>
+    <img class="img-body" src="img/facialcoordinates.jpg">
 </div>
 
 <div class="site-section" id="ctaoffset">
     <hr>
     <h1 class="subtitle is-3">About</h1>
-    <p>We are a collective of data scientists doing research on computer vision within psychology and other research fields. FACEDATA addresses challenges faced by</p>
+    <p>We are a collective of data scientists researching computer vision within psychology, sociology, behavioural economics, and other research fields. FACEDATA addresses common challenges we’ve faced in procuring and preparing data within our research.</p>
 </div>
 
 <div class="site-section" >
     <hr>
     <h1 class="subtitle is-3">Purchase</h1>
     <p>FACEMETA is available to be purchased for commercial and academic purposes. The dataset has tiered pricing options by volume and pre-processing.</p>
-    <p>To get started, enter your commercial email below. You’ll be provided with (i) a free sample of 100 images and metadata to ensure it’s aligned with your needs, and (ii) purchase options to download the full dataset.</p>
+    <p>To get started, enter your commercial email below. You’ll be provided with (i) a free sample of 100 images and metadata to ensure the dataset meets your needs, (ii) a 'Getting Started' guide, and (ii) purchase options to download the full dataset.</p>
+    <p>SECTION</p>
 </div>
 
 <div class="site-section section-last">
     <hr>
-    <h1 class="subtitle is-3">Section</h1>
-    <p>Description</p>
+    <h1 class="subtitle is-3">References</h1>
+    <p><a href="https://personalpages.manchester.ac.uk/staff/timothy.f.cootes/Models/group_reg.html" target="_blank">https://personalpages.manchester.ac.uk/staff/timothy.f.cootes/Models/group_reg.html</a><br>
+    <a href="https://www.pyimagesearch.com/2014/11/10/histogram-oriented-gradients-object-detection/" target="_blank">https://www.pyimagesearch.com/2014/11/10/histogram-oriented-gradients-object-detection</a><br>
+    <a href="https://medium.com/@ageitgey/machine-learning-is-fun-part-4-modern-face-recognition-with-deep-learning-c3cffc121d78" target="_blank">https://medium.com/@ageitgey/machine-learning-is-fun-part-4-modern-face-recognition-with-deep-learning-c3cffc121d78</p>
 </div>
 
 <footer></footer>
