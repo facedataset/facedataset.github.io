@@ -37,10 +37,13 @@
 -->
 
 <nav class="nav nav-fixed-top has-shadow">
-  <div class="site-nav">
+  <div class="container site-nav">
     <div class="nav-left">
-     <p class="nav-title subtitle is-3">FACEMETA</p>
+      <p class="nav-title subtitle is-4">FACEMETA</p>
     </div>
+    <div class="nav-right">
+      <p><a href="#ctaoffset" class="button is-white is-outlined level-item button-nav">Purchase</a></p>
+  </div>
 </nav>
 
 
@@ -52,8 +55,7 @@
 
 
 <div class="site-section">
-    <hr>
-    <h1 class="subtitle is-3">FACEMETA - National Dataset of Hominological Facial Image Metadata</h1>
+    <h1 class="subtitle is-3"><b>FACEMETA - Dataset for Hominological Facial Image Metadata</b></h1>
     <p>FACEMETA is the largest commercially available dataset of facial images with detailed metadata.</p>
 
     <p>The FACEMETA dataset is intended for use in scientific research. It contains 255,555 high-resolution standardized photographs of male and female faces of varying ethnicity between the ages of 17-65. Extensive data processing are available for each individual model. These data include both physical attributes as well facial feature encodings.</p>
@@ -83,13 +85,13 @@
     <p>Face are standardized and normalize to correct for orientation. Facial landmarks are used to localize and represent salient regions of the face, such as Eyes, Eyebrows, Nose, Mouth, Jawline. Facial landmark were extracted in two step: first, localize the face in the image( pre-trained HOG + Linear SVM object detectors), then detect the key facial structures on the face ROI using ensmeble forrest (f the One Millisecond Face Alignment with an Ensemble of Regression Trees). The pre-trained facial landmark detector estimates the location of 68 (x, y)-coordinates that map to facial structures on the face.</p>
 </div>
 
-<div class="site-section">
+<div class="site-section" id="ctaoffset">
     <hr>
     <h1 class="subtitle is-3">About</h1>
     <p>We are a collective of data scientists doing research on computer vision within psychology and other research fields. FACEDATA addresses challenges faced by</p>
 </div>
 
-<div class="site-section">
+<div class="site-section" >
     <hr>
     <h1 class="subtitle is-3">Purchase</h1>
     <p>FACEMETA is available to be purchased for commercial and academic purposes. The dataset has tiered pricing options by volume and pre-processing.</p>
@@ -102,7 +104,7 @@
     <p>Description</p>
 </div>
 
-<footer>&copy; Optional footer</footer>
+<footer></footer>
 
 
 </div><!--End formatting for main site body-->
