@@ -59,13 +59,13 @@
     <h1 class="subtitle is-3"><b>FACEMETA - Dataset for Hominological Facial Image Metadata</b></h1>
     <p>FACEMETA is the largest commercially available dataset of facial images with detailed metadata.</p>
 
-    <p>The FACEMETA dataset is intended for use in scientific research. It contains 255,555 high-resolution standardized photographs of male and female faces of varying ethnicity between the ages of 17-65. Extensive data processing are available for each individual model. These data include both physical attributes as well facial feature encodings.</p>
+    <p>The FACEMETA dataset is intended for use in academic research and corporate research and development (R&D). It contains over 250,000 high-resolution normalized photographs of male and female faces of varying ethnicity between the ages of 17-65. Extensive data processing are made available for each individual model. This dataset includes physical attributes as well facial landmarks and facial feature encodings for each individual model.</p>
 </div>
 
 <div class="site-section">
     <hr>
     <h1 class="subtitle is-3">Overview</h1>
-    <p>The metadata for face images include descriptors such as: race, gender, age, height, weight, and eye color, date picture taken. Additionally, pre-processing is available to speed up deep learning projects, including standardization of aspect ratio, image size, image alignment, tilt, noise reduction, standardized field of view, 128 feature points, and image encoding.</p>
+    <p>The metadata for face images include descriptors such as: ethnicity, gender, age, weight, height, eye color, and date picture taken. Additionally, pre-processing is available to speed up deep learning projects, including standardization of aspect ratio, image size, image alignment, tilt, noise reduction, standardized field of view, application of 128 feature points, and image encoding.</p>
     
     <p>This dataset’s images are pre-processed and ready for modeling. Use cases include:</p>
     
@@ -81,7 +81,7 @@
 <div class="site-section">
     <hr>
     <h1 class="subtitle is-3">Methodology</h1>
-    <p>Face are standardized and normalize to correct for orientation. Facial landmarks are used to localize and represent salient regions of the face, such as eyes, eyebrows, nose, mouth, and jawline. Facial landmark were extracted in two step: first, through localization of the face in the image (pre-trained <a href="https://www.pyimagesearch.com/2014/11/10/histogram-oriented-gradients-object-detection/" target="_blank">HOG + Linear SVM object detectors</a>), then detecting the key facial structures on the face ROI using ensemble forest (see: <a href="https://pdfs.semanticscholar.org/d78b/6a5b0dcaa81b1faea5fb0000045a62513567.pdf" target="_blank">One Millisecond Face Alignment with an Ensemble of Regression Trees</a>). The pre-trained facial landmark detector estimates the location of <b>68 (x, y) coordinates</b> that map to facial structures on the face.</p>
+    <p>Face images were acquired in real setting. We first used the Histogram of Oriented Gradients method to detect the face in each image [1]. Then, 68 facial landmark were extracted using the face alignment method by Kazemi and Josephine [2]. An affine image transformation were then apply to map landmark for each faces. Each image is also embedded into a 128 dimensional vector [3].
     <img class="img-body" src="img/facialcoordinates.jpg">
 </div>
 
@@ -146,15 +146,14 @@
 <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[4]='COMPANY';ftypes[4]='text';fnames[5]='ROLE';ftypes[5]='text';fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 <!--End mc_embed_signup-->
 
-
 </div>
 
 <div class="site-section section-last">
     <hr>
     <h1 class="subtitle is-3">References</h1>
-    <p><a href="https://personalpages.manchester.ac.uk/staff/timothy.f.cootes/Models/group_reg.html" target="_blank">https://personalpages.manchester.ac.uk/staff/timothy.f.cootes/Models/group_reg.html</a><br>
-    <a href="https://www.pyimagesearch.com/2014/11/10/histogram-oriented-gradients-object-detection/" target="_blank">https://www.pyimagesearch.com/2014/11/10/histogram-oriented-gradients-object-detection</a><br>
-    <a href="https://medium.com/@ageitgey/machine-learning-is-fun-part-4-modern-face-recognition-with-deep-learning-c3cffc121d78" target="_blank">https://medium.com/@ageitgey/machine-learning-is-fun-part-4-modern-face-recognition-with-deep-learning-c3cffc121d78</p>
+    [1] N. Dalal and B. Triggs. Histograms of oriented gradients for human detection. In CVPR, 2005 <a href="https://lear.inrialpes.fr/people/triggs/pubs/Dalal-cvpr05.pdf" target="_blank">[PDF]</a><br>
+    [2] V. Kazemi and S. Josephine. One millisecond face alignment with an ensemble of regression trees. In CVPR, 2014 <a href="https://pdfs.semanticscholar.org/d78b/6a5b0dcaa81b1faea5fb0000045a62513567.pdf" target="_blank">[PDF]</a><br>
+    [3] F. Schroff, D. Kalenichenko, and J. Philbin. Facenet: A unified embedding for face recognition and clustering. In Proc. CVPR, 2015 <a href="https://www.cv-foundation.org/openaccess/content_cvpr_2015/ext/1A_089_ext.pdf" target="_blank">[PDF]</a>
 </div>
 
 <footer></footer>
