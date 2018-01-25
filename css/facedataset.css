@@ -67,11 +67,15 @@ p {
   margin-top: 70px;
 }
 
+.img-container {
+
+}
+
 .img-body {
-  margin-top: 10px;
+    margin-top: 10px;
   margin-left: 10px;
   margin-bottom: 10px;
-  width: 50%;
+  width: 70%;
 }
 
 @media (max-width: 900px) {
@@ -86,7 +90,7 @@ p {
   }
  
  .img-body {
-  width: 65%;
+    width: 80%;
  }
 }
 

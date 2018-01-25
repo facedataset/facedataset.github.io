@@ -60,13 +60,15 @@
     <p>FACEMETA is the largest commercially available dataset of facial images with detailed metadata.</p>
 
     <p>The FACEMETA dataset is intended for use in academic research and corporate research and development (R&D). It contains over 250,000 high-resolution normalized photographs of male and female faces of varying ethnicity between the ages of 17-65. Extensive data processing are made available for each individual model. This dataset includes physical attributes as well facial landmarks and facial feature encodings for each individual model.</p>
+
+    <img class="img-body" src="img/faciallandmark1.jpg">
 </div>
 
 <div class="site-section">
     <hr>
     <h1 class="subtitle is-3">Overview</h1>
     <p>The metadata for face images include descriptors such as: ethnicity, gender, age, weight, height, eye color, and date picture taken. Additionally, pre-processing is available to speed up deep learning projects, including standardization of aspect ratio, image size, image alignment, tilt, noise reduction, standardized field of view, application of 128 feature points, and image encoding.</p>
-    
+
     <p>This dataset’s images are pre-processed and ready for modeling. Use cases include:</p>
     
     <li>Age/Health prediction</li>
@@ -76,13 +78,16 @@
     <li>Face generation</li>
     <li><a href="http://www.telegraph.co.uk/technology/2017/09/08/ai-can-tell-people-gay-straight-one-photo-face/" target="_blank">Sexual orientation</a></li>
     <li><a href="http://bigthink.com/ideafeed/can-technology-estimate-how-long-youll-live-just-by-looking-at-your-face" target="_blank">Life span</a></li>
+
 </div>
 
 <div class="site-section">
     <hr>
     <h1 class="subtitle is-3">Methodology</h1>
     <p>Face images were acquired in real setting. We first used the Histogram of Oriented Gradients method to detect the face in each image [1]. Then, 68 facial landmark were extracted using the face alignment method by Kazemi and Josephine [2]. An affine image transformation were then apply to map landmark for each faces. Each image is also embedded into a 128 dimensional vector [3].
-    <img class="img-body" src="img/facialcoordinates.jpg">
+
+    <img class="img-body" src="img/faciallandmark2.jpg">
+
 </div>
 
 <div class="site-section">
