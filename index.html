@@ -29,6 +29,7 @@
     </style>
     <!-- End Mailchimp Formatting -->
 
+    <title>FACEMETA</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="title" content="FACEMETA - Facial Image Metadata Dataset">
@@ -39,8 +40,6 @@
 
     <link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-
-    <title>FACEMETA - Facial Image Metadata Dataset</title>
 </head>
 
 
@@ -68,21 +67,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!-- Main Site Body -->
 <div class="site-section">
-    <h1 class="subtitle is-3"><b>FACEMETA - Dataset for Hominological Facial Image Metadata</b></h1>
+    <h1 class="subtitle is-3"><b>FACEMETA - Hominological Dataset of Facial Image Metadata</b></h1>
     <p>FACEMETA is the largest commercially available dataset of facial images with detailed metadata.</p>
 
     <p>TThe FACEMETA dataset is intended for use in academic research and corporate research and development (R&D). It contains over 50,000 normalized photographs of male and female faces of varying ethnicity between the ages of 17-65. Extensive data processing are made available for each individual model. This dataset includes physical attributes as well facial landmarks and facial feature encodings for each individual model.</p>
-
-    <img class="img-body" src="img/faciallandmark1.jpg">
 </div>
 
 <div class="site-section">
     <hr>
     <h1 class="subtitle is-3">Overview</h1>
-    <p>The metadata for face images include descriptors such as: ethnicity, gender, age, weight, height, eye color, and date picture taken. Additionally, pre-processing is available to speed up deep learning projects, including standardization of aspect ratio, image size, image alignment, tilt, noise reduction, standardized field of view, application of 128 feature points, and image encoding.</p>
+    <p>The metadata for face images include descriptors such as: ethnicity, gender, age, weight, height, eye color, and date picture taken. Additionally, pre-processing techniques were applied to accelerate deep learning projects, including standardization of aspect ratio, image size, image alignment, tilt, noise reduction, standardized field of view, application of 64 feature points, and image encoding.</p>
+
+    <img class="img-body" src="img/attributes.jpg">
 
     <p>This dataset’s images are pre-processed and ready for modeling. Use cases include:</p>
-    
     <li>Age/Health prediction</li>
     <li>ID matching</li>
     <li>Psychology studies</li>
@@ -95,15 +93,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="site-section">
     <hr>
     <h1 class="subtitle is-3">Methodology</h1>
-    <p>Face images were acquired in real setting. We first used the Histogram of Oriented Gradients method to detect the face in each image [1]. Then, 68 facial landmark were extracted using the face alignment method by Kazemi and Josephine [2]. An affine image transformation were then apply to map landmark for each faces. Each image is also embedded into a 128 dimensional vector [3].
+    <p id="ctaoffset">Face images were acquired in real setting. We first used the Histogram of Oriented Gradients method to detect the face in each image [1]. Then, 68 facial landmark were extracted using the face alignment method by Kazemi and Josephine [2]. An affine image transformation were then apply to map landmark for each faces. Each image is also embedded into a 128 dimensional vector [3].
 
-    <img class="img-body" src="img/faciallandmark2.jpg">
-</div>
-
-<div class="site-section">
-    <hr>
-    <h1 class="subtitle is-3">About</h1>
-    <p id="ctaoffset">We are a collective of data scientists researching computer vision within psychology, sociology, behavioural economics, and other research fields. FACEMETA addresses common challenges we’ve faced in procuring and preparing data within our research.</p>
+    <img class="img-body" src="img/faciallandmark1.jpg">
 </div>
 
 <div class="site-section" >
@@ -157,6 +149,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 
 <div class="site-section section-last">
+    <hr>
+    <h1 class="subtitle is-3">About</h1>
+    <p>We are a collective of data scientists researching computer vision within psychology, sociology, behavioural economics, and other research fields. FACEMETA addresses common challenges we’ve faced in procuring and preparing data for analysis.</p>
+</div>
+
+<div class="site-section">
     <hr>
     <h1 class="subtitle is-3">References</h1>
     [1] N. Dalal and B. Triggs. Histograms of oriented gradients for human detection. In CVPR, 2005 <a href="https://lear.inrialpes.fr/people/triggs/pubs/Dalal-cvpr05.pdf" target="_blank">[PDF]</a><br>

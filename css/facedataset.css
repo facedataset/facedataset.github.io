@@ -1,5 +1,5 @@
 /*!
- * Polis Finance
+ * Face Dataset
  */
 
 
@@ -73,9 +73,9 @@ p {
 
 .img-body {
   margin-top: 10px;
-  margin-left: 10px;
-  margin-bottom: 10px;
-  width: 70%;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  width: 50%;
 }
 
 @media (max-width: 900px) {
@@ -90,7 +90,7 @@ p {
   }
  
  .img-body {
-    width: 80%;
+    width: 60%;
  }
 }
 
@@ -106,7 +106,7 @@ p {
   }
  
  .img-body {
-    width: 50%;
+    width: 40%;
  }
 }
 
