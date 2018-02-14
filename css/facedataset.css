@@ -75,7 +75,7 @@ p {
   margin-top: 10px;
   margin-left: 20px;
   margin-bottom: 20px;
-  width: 50%;
+  width: 60%;
 }
 
 @media (max-width: 900px) {
@@ -90,7 +90,7 @@ p {
   }
  
  .img-body {
-    width: 60%;
+    width: 70%;
  }
 }
 
@@ -106,7 +106,7 @@ p {
   }
  
  .img-body {
-    width: 40%;
+    width: 50%;
  }
 }
 
