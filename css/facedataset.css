@@ -72,11 +72,13 @@ p {
 }
 
 .img-body {
-  margin-top: 10px;
+  margin-top: 20px;
   margin-left: 20px;
   margin-bottom: 20px;
   width: 70%;
+  display: block;
 }
+
 
 @media (max-width: 900px) {
   .site-body {
