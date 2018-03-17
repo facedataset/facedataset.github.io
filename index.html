@@ -79,7 +79,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <h1 class="subtitle is-3">Overview</h1>
     <p>The metadata for face images include descriptors such as: ethnicity, gender, age, weight, height, eye color, and date picture taken. Additionally, pre-processing techniques were applied, including standardization of aspect ratio, image size, image alignment, tilt, noise reduction, standardized field of view, application of 64 feature points, and image encoding. This pre-processing significantly reduces the preparation time for your deep learning projects.</p>
 
-    <img class="img-body img-s" src="img/features.png">
+    <img class="img-body" src="img/features.png">
 
     <p>This dataset’s images are pre-processed and ready for modeling. Use cases include:</p>
     <li>Age/Health prediction</li>
@@ -97,9 +97,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <p id="ctaoffset">Face images were acquired in real setting. The Histogram of Oriented Gradients Method by Dalal and Triggs was used to detect the face in each image [1]. Then, 68 facial landmarks were extracted using the face alignment method as presented by Kazemi and Josephine [2]. Those landmarks were used to parametrize an affine image transformation to normalize the images into a common template. Finally, 68 facial landmarks are extracted from the normalized images and a 128-dimensional vector is computed for each normalized image using the method presented by Schroff et al [3].
 
     <img class="img-body" src="img/groupwise.jpg">
-    <p>(A) Mean image following a groupwise registration of all images in the FACEMETA dataset
-    <br>(B) 68 facial landmarks extracted from the mean image
-    <br>(C) 128-dimensional vector embedded of the mean image</p>
+    <p>(A) Mean image following a groupwise registration of all FACEMETA images.
+    <br>(B) 68 facial landmarks extracted from the mean image.
+    <br>(C) 128-dimensional vector embedding of the mean image.</p>
 </div>
 
 <div class="site-section" >
