@@ -71,7 +71,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- Main Site Body -->
 <div class="site-section">
     <h1 class="subtitle is-3"><b>FACEMETA - Hominological Dataset of Facial Image Metadata</b></h1>
-    <p>FACEMETA is the largest commercially available dataset of facial images with detailed metadata. The FACEMETA dataset is intended for use in academic research and corporate R&D. It contains 100,000 normalized photographs of male and female faces of varying ethnicity between the ages of 18 and 80. The FACEMETA dataset includes physical attributes as well facial landmarks and facial feature encodings for each individual model.</p>
+    <p>FACEMETA is the largest commercially available dataset of facial images with detailed metadata. The FACEMETA dataset is intended for use in academic research and corporate R&D. It contains 100,000 normalized photographs of male and female faces of varying ethnicity between the ages of 18 and 80. The FACEMETA dataset includes physical attributes as well facial landmarks and facial feature encodings for each individual image.</p>
 </div>
 
 <div class="site-section">
@@ -94,10 +94,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="site-section">
     <hr>
     <h1 class="subtitle is-3">Methodology</h1>
-    <p id="ctaoffset">Face images were acquired in real setting. The Histogram of Oriented Gradients Method by Dalal and Triggs was used to detect the face in each image [1]. Then, 68 facial landmarks were extracted using the face alignment method as presented by Kazemi and Josephine [2]. Those landmarks were used to parametrize an affine image transformation to normalize the images into a common template. Finally, 68 facial landmarks are extracted from the normalized images and a 128-dimensional vector is computed for each normalized image using the method presented by Schroff et al [3].
+    <p id="ctaoffset">Face images were acquired in real setting. The Histogram of Oriented Gradients Method by Dalal and Triggs was used to detect the face in each image [1]. Then, 68 facial landmarks were extracted using the face alignment method as presented by Kazemi and Josephine [2]. Those landmarks were used to parameterize an affine image transformation to normalize the images into a common space. Finally, 68 facial landmarks were extracted from the normalized images and a 128-dimensional vector is computed for each normalized image using the method presented by Schroff et al [3].</p>
 
     <img class="img-body" src="img/groupwise.jpg">
-    <p>(A) Mean image following a groupwise registration of all FACEMETA images.
+    <p>(A) Mean image following a groupwise non-regid registration of all FACEMETA images.
     <br>(B) 68 facial landmarks extracted from the mean image.
     <br>(C) 128-dimensional vector embedding of the mean image.</p>
 </div>
@@ -155,7 +155,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="site-section section-last">
     <hr>
     <h1 class="subtitle is-3">About</h1>
-    <p>We are a collective of data scientists researching computer vision within psychology, sociology, andbehavioural economics, and related research fields. FACEMETA addresses common challenges we’ve faced in procuring and preparing data for analysis.</p>
+    <p>We are a collective of data scientists and researchers across disclines including psychology, sociology, and behavioural economics. FACEMETA addresses common challenges faced in procuring and processing data for analysis.</p>
 </div>
 
 <div class="site-section">
