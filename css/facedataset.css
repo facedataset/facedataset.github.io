@@ -73,10 +73,11 @@ p {
 
 .img-body {
   margin-top: 20px;
-  margin-left: 20px;
   margin-bottom: 20px;
   width: 70%;
   display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
