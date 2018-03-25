@@ -71,33 +71,33 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- Main Site Body -->
 <div class="site-section">
     <h1 class="subtitle is-3"><b>FACEMETA - Hominological Dataset of Facial Image Metadata</b></h1>
-    <p>FACEMETA is the largest commercially available dataset of facial images with detailed metadata. The FACEMETA dataset is intended for use in academic research and corporate R&D. It contains 100,000 normalized photographs of male and female faces of varying ethnicity between the ages of 18 and 80. The FACEMETA dataset includes physical attributes as well facial landmarks and facial feature encodings for each individual image.</p>
+    <p>FACEMETA is the largest commercially available dataset of facial images with detailed metadata. The FACEMETA dataset is intended for use in academic research and corporate R&D. It contains 100,000 normalized photographs of male and female faces of varying ethnicity between the ages of 18 and 80. The FACEMETA dataset includes physical attributes as well as facial landmarks and facial feature encodings for each individual image.</p>
 </div>
 
 <div class="site-section">
     <hr>
     <h1 class="subtitle is-3">Overview</h1>
-    <p>The metadata for face images include descriptors such as: ethnicity, gender, age, weight, height, eye color, and date picture taken. Additionally, pre-processing techniques were applied, including standardization of aspect ratio, image size, image alignment, tilt, noise reduction, standardized field of view, application of 64 feature points, and image encoding. This pre-processing significantly reduces the preparation time for your deep learning projects.</p>
+    <p>The FACEMETA dataset includes normalized images and the following metadata and features: gender, age, ethnicity, height, weight, 68 facial landmarks, and a 128-dimensional embedding for each normalized images. Multiple pre-processing techniques were applied to obtain the normalized images. Those include normalizing image size, aspect ratio and field of view, reducing image noise, and correcting for various head pose. This pre-processing significantly reduces the data preparation step for your deep learning projects that make use of face images.</p>
 
     <img class="img-body" src="img/features.png">
 
-    <p>This dataset’s images are pre-processed and ready for modeling. Use cases include:</p>
+    <p>The FACEMETA dataset is ready to be use in your algorithm development step. Several use cases include:</p>
     <li>Age/Health prediction</li>
     <li>ID matching</li>
     <li>Psychology studies</li>
     <li>Facial expression analysis</li>
     <li>Face generation</li>
     <li><a href="http://www.telegraph.co.uk/technology/2017/09/08/ai-can-tell-people-gay-straight-one-photo-face/" target="_blank">Sexual orientation</a></li>
-    <li><a href="http://bigthink.com/ideafeed/can-technology-estimate-how-long-youll-live-just-by-looking-at-your-face" target="_blank">Life span</a></li>
+    <li><a href="http://bigthink.com/ideafeed/can-technology-estimate-how-long-youll-live-just-by-looking-at-your-face" target="_blank">Life span estimation</a></li>
 </div>
 
 <div class="site-section">
     <hr>
     <h1 class="subtitle is-3">Methodology</h1>
-    <p id="ctaoffset">Face images were acquired in real setting. The Histogram of Oriented Gradients Method by Dalal and Triggs was used to detect the face in each image [1]. Then, 68 facial landmarks were extracted using the face alignment method as presented by Kazemi and Josephine [2]. Those landmarks were used to parameterize an affine image transformation to normalize the images into a common space. Finally, 68 facial landmarks were extracted from the normalized images and a 128-dimensional vector is computed for each normalized image using the method presented by Schroff et al [3].</p>
+    <p>Face images were acquired in real setting. The Histogram of Oriented Gradients Method by Dalal and Triggs was used to detect the face in each image [1]. Then, 68 facial landmarks were extracted using the face alignment method as presented by Kazemi and Josephine [2]. Those landmarks were used to parameterize an affine image transformation to normalize the images into a common space. Finally, 68 facial landmarks were extracted from the normalized images and a 128-dimensional embedding is computed for each normalized image using the method presented by Schroff et al [3].</p>
 
     <img class="img-body" src="img/groupwise.jpg">
-    <p>(A) Mean image following a groupwise non-regid registration of all FACEMETA images.
+    <p id="ctaoffset">(A) Mean image following a groupwise non-regid registration of all FACEMETA images.
     <br>(B) 68 facial landmarks extracted from the mean image.
     <br>(C) 128-dimensional vector embedding of the mean image.</p>
 </div>
@@ -105,8 +105,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="site-section" >
     <hr>
     <h1 class="subtitle is-3">Purchase</h1>
-    <p>FACEMETA is available to be purchased for commercial and academic purposes. The dataset has tiered pricing options by volume of images and pre-processing.</p>
-    <p>Enter your commercial email address below to receive a sample dataset of 200 images and their metadata to ensure it meets your needs. The introductory email will include instructions for downloading the sample dataset, and purchase options to download the full dataset.</p>
+    <p>The FACEMETA dataset is available to be purchased for academic research and corporate R&D. The dataset has tiered pricing options by volume of normalized images.</p>
+    <p>Enter your academic or corporate email address below to access, at no cost, a sample of 200 normalized images and metadata from the FACEMETA dataset to ensure it meets your needs. You will receive an introductory email that includes instructions for downloading this sample dataset, and purchase options to download the full dataset.</p>
     
 <!-- Begin MailChimp Signup Form -->
 <div id="mc_embed_signup">
@@ -155,7 +155,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="site-section section-last">
     <hr>
     <h1 class="subtitle is-3">About</h1>
-    <p>We are a collective of data scientists and researchers across disclines including psychology, sociology, and behavioural economics. FACEMETA addresses common challenges faced in procuring and processing data for analysis.</p>
+    <p>We are a collective of independent data scientists and researchers across various disciplines including psychology, sociology, and behavioural economics. FACEMETA addresses common challenges faced in procuring and processing data for analysis.</p>
 </div>
 
 <div class="site-section">
