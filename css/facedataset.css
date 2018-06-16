@@ -59,7 +59,19 @@ p {
   margin-bottom: 70px;
 }
 
-.site-section {
+.face-dataset-metadata {
+  padding-bottom: 20px;
+}
+
+.face-dataset-metadata-overview {
+  padding-bottom: 20px;
+}
+
+.face-dataset-metadata-methodology {
+  padding-bottom: 20px;
+}
+
+.face-dataset {
   padding-bottom: 20px;
 }
 
